@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<htm lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador Java Script</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            background-color: aliceblue;
+        }
+        h1 {
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        form {
+            display: flex;
+            justify-content: center;
+        }
+        label {
+            border: 5px solid gray;
+            border-radius: 100%;
+            padding: 10%;
+            background: linear-gradient(rgb(18, 17, 17), rgb(239, 227, 227));
+
+        }
+        .campo {
+            padding: 10px;
+            margin: 10px;
+        }
+        form, input {
+            font-weight: 700;
+        }
+        .btn {
+            font-weight: 800;
+            margin: 10px;
+            color: black;
+            background-color: white;;
+        }
+        #btn {
+            font-weight: 800;
+        }
+        h2 {
+            display:inline;
+            font-weight: bold;
+            color: white
+        }
+    </style>
+    <script>
+        function soma () {
+            a = document.f1.val1.value;
+            b = document.f1.val2.value;
+            document.f1.val3.value = parseFloat(a) + parseFloat(b);
+        }
+        
+    </script>
+</head>
+<body>
+    <h1>Somador Java Script</h1>
+
+    <form name="f1">
+        <label>
+        <input class="campo" type="text" name="val1" size="10">
+        <h2>+</h2>
+        <input class="campo" type="text" name="val2" size="10">
+        <h2><input class="btn" name="sinal" type="button" value=" = " onclick = "soma()"></h2>
+        <input class="campo" type="text" name="val3" size="10">
+        </label>
+    </form>
+
+    <script>
+        num1 = document.forms[0].elements[0];
+        num2 = document.forms[0].elements[1];
+        num3 = document.f1.val2;
+        num4 = document.forms[0].elements[3]
+        sina = document.f1.sinal;
+        /*numero1 = num1.value;*/
+        num1.style.color = "yellow";
+        num1.style.background = "white";
+        num1.style.weight = "1000";
+        num2.style.color = "yellow";
+        num2.style.bacground = "white";
+        num3.style.color = "yellow";
+        num3.style.background = "white";
+        num4.style.color ="yellow";
+        num4.style.background = "white";           
+    </script>
+</body>
+</htm>
